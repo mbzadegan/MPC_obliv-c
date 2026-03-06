@@ -1,7 +1,7 @@
 Obliv-C Secure Computation Compiler (`oblivcc`)
 ===============================================
 
-Obliv-C is a simple GCC wrapper that makes it easy to embed secure computation protocols inside regular C programs. The idea is simple: if you are performing a multi-party distributed computation with sensitive data, just write it in our Obliv-C langauge and compile/link it with your project. The result will be a secure cryptographic protocol that performs this operation without revealing any of the inputs or intermediate values of the computation to any of the parties. Only the outputs are finally shared.
+Obliv-C is a simple GCC wrapper that makes it easy to embed secure computation protocols inside regular C programs. The idea is simple: if you are performing a multi-party distributed computation with sensitive data, just write it in our Obliv-C language and compile/link it with your project. The result will be a secure cryptographic protocol that performs this operation without revealing any inputs or intermediate values of the computation to any party. Only the outputs are finally shared.
 
 # Installation
 Unfortunately, the instructions for Fedora and Mac OS might be a little out of date, since we discovered OPAM is now a dependency (#49). Please ping us if you figured out how to install Obliv-C on those systems.
@@ -30,7 +30,7 @@ Unfortunately, the instructions for Fedora and Mac OS might be a little out of d
 
 4. Start using it! The compiler is a GCC wrapper script found in `bin/oblivcc`. Example codes are in `test/oblivc`. A language tutorial is found [here](http://goo.gl/TXzxD0).
 
-Most of this code was forked from the project CIL (C Intermediate Language). You can diff with the master branch to see which part was added on later.
+Most of this code was forked from the CIL (C Intermediate Language) project. You can diff with the master branch to see which part was added later.
 
 # Benchmarks
 
